@@ -1,4 +1,4 @@
-import Joi from 'joi'
+import { default as Joi } from 'joi'
 
 export const markersValidationSchema = Joi.array().items(
   Joi.object({

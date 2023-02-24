@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Controls } from './controls'
 import { Marker, MarkerConfiguration } from './marker'
 import { SettingsViewer } from './settings-viewer'
-import './styles.css'
-
+import './input.css'
 export type ControlSelection =
   | 'FullScreen'
   | 'Play'
@@ -278,7 +277,7 @@ function VideoPlayer(props: Props) {
   }, [])
 
   return (
-    <div className="react-video-wrap" style={{ height, width }}>
+    <div className="react-video-wrap rounded-lg overflow-hidden" style={{ height, width }}>
       <video
         ref={playerEl}
         key={url}

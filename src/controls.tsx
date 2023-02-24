@@ -168,7 +168,7 @@ export class Controls extends React.Component<Props, State> {
           )}
           {controls.indexOf(ControlsSelection.Progress.toString()) !== -1 && (
             <div className="progress-wrap">
-              <progress ref={progressEl} max="100" onClick={onProgressClick}>
+              <progress ref={progressEl} max="100" className="rounded-full" onClick={onProgressClick}>
                 0% played
               </progress>
               {markers &&

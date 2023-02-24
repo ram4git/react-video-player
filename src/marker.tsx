@@ -39,10 +39,10 @@ export class MarkerView extends React.Component<Props, never> {
       this.props.selectedMarker !== undefined && this.props.selectedMarker.id === marker.id
         ? configuration !== undefined
           ? configuration.selectionColor
-          : '#4CAF50'
+          : '#006ee5'
         : configuration !== undefined
         ? configuration.color
-        : '#F44336'
+        : '#ff8208'
 
     return (
       <i

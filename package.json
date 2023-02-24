@@ -1,14 +1,14 @@
 {
-  "name": "react-video-player-extended",
+  "name": "sonet-video-player",
   "version": "9.0.0",
   "description": "React HTML5 video providing functionality for marking and selecting frames, jumping back and forth between frames based on the fps.",
-  "author": "Amitt K Sharma",
+  "author": "ram@sonet.io",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amittkSharma/react-video-player-extended.git"
+    "url": ""
   },
   "keywords": [
     "react",
@@ -27,9 +27,9 @@
     "video player"
   ],
   "bugs": {
-    "url": "https://github.com/amittkSharma/react-video-player-extended/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/amittkSharma/react-video-player-extended#readme",
+  "homepage": "",
   "peerDependencies": {
     "react": ">=16.13.1",
     "react-dom": ">=16.13.1"
@@ -42,6 +42,7 @@
     "@babel/preset-typescript": "7.6.0",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.6",
+    "@types/node": "16.9",
     "babel": "6.23.0",
     "babel-loader": "8.0.6",
     "css-loader": "3.2.0",
@@ -51,6 +52,7 @@
     "react-test-renderer": "16.10.2",
     "source-map-loader": "^0.2.4",
     "style-loader": "1.0.0",
+    "tailwindcss": "^3.2.7",
     "ts-loader": "^7.0.2",
     "tslint": "6.1.3",
     "tslint-checker": "5.2.0",
@@ -65,7 +67,7 @@
     "start": "node server.js",
     "build-example": "webpack",
     "build-prod": "webpack --config webpack.prod.config.js",
-    "lint": "tslint -p .",
+    "lint": "tslint \"src/**/*.ts\"",
     "build-package": "npm run lint && npm run build-example && npm run build-prod"
   },
   "dependencies": {

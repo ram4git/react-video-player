@@ -150,7 +150,7 @@ function App() {
 
   return (
     <>
-      <header className="main-header">
+      <header className="main-header bg-red-500">
         <h1 className="app-name">React Video Player (Extended)</h1>
       </header>
       <div

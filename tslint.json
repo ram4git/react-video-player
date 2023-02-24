@@ -3,5 +3,10 @@
   "rules": {
     "no-submodule-imports": false,
     "no-console": [true, "log", "error"]
-  }
+  },
+    "linterOptions": {
+        "exclude": [
+            "node_modules"
+        ]
+    }
 }
